@@ -34,11 +34,12 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
     * budget_monthly - Monthly spending allocation
 
 ### Data Cleaning
-* Remove positive income transactions
-  * Paychecks
-  * Venmo Cashout transactions
-  * Transfers between bank accounts
-* Remove credit card payments
+* Utilize filtering to search for and remove the following:
+  * Remove positive income transactions
+    * Paychecks
+    * Venmo cashout
+    * Transfers between bank accounts
+  * Remove credit card payments
 
 ### Categorizing Transactions
 
