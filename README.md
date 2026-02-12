@@ -42,7 +42,20 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
   * Remove credit card payments
 
 ### Categorizing Transactions
-* Use a [custom function](https://docs.google.com/document/d/1AEpXUVcENehsunWQjAvowS24IQx22PHxnRGpS8qHqQo/edit?usp=drive_link) to be placed in each cell of my_category
+* Use a [custom function](https://docs.google.com/document/d/1AEpXUVcENehsunWQjAvowS24IQx22PHxnRGpS8qHqQo/edit?usp=drive_link) that is placed in each cell of my_category
+  * This function categorizes each merchant based on input from the creator
+  * Categories:
+    * Groceries
+    * Dining Out
+    * Transportation
+    * Subscriptions
+    * Travel
+    * Bills
+    * Entertainment
+    * Shopping
+    * Other
+* Utilize filtering of original_category, sorting merchant from A-Z to categorize one category at a time
+* Once most items have been categorized, set a filter on my_category to find all FALSE values to determine which merchants still need to be categorized
 
 ### Creating Pivot Tables
 
