@@ -4,6 +4,6 @@ A project to showcase data analysis skill analyizing my spending across multiple
 
 # Process
 
-## Obtaining Data
+### Obtaining Data
 
-## Data Cleaning
+### Data Cleaning
