@@ -42,6 +42,7 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
   * Remove credit card payments
 
 ### Categorizing Transactions
+* Use a [custom function](https://docs.google.com/document/d/1AEpXUVcENehsunWQjAvowS24IQx22PHxnRGpS8qHqQo/edit?usp=drive_link) to be placed in each cell of my_category
 
 ### Creating Pivot Tables
 
