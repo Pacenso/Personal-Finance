@@ -58,13 +58,26 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
 * Once most items have been categorized, set a filter on my_category to find all FALSE values to determine which merchants still need to be categorized
 
 ### Creating Pivot Tables
+Table 1 - Monthly Spending by Category
 * Modify dates of transactions to make them compatible with a pivot table
   * Insert a new row B and use the formula `=TEXT(A2,"yyyy-mm")` to change the format into text with the structure of yyyy-mm
-* In monthly_summary, create a pivot table data range `raw_data!B1:H586`
+* In monthly_summary, create a pivot table with range `raw_data!B1:H586`
   * Rows = my_category
   * Columns = date
   * Values = amount
 * Format all money values as currency
+
+Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
+* In monthly_summary, create a second pivot table with range `raw_data!B1:H586`
+  * Rows = source
+  * Values = sum of amount
+  * Values = count of amount
+    * Considered amount of transactions
+* Format sum of amount as currency
+
+Table 3 - Top 10 Merchants
+* Used a formula for this because sorting the pivot table did not work the way I needed
+  * Formula: `=QUERY(raw_data!B:E, "select C, sum(D) where C is not null group by C order by sum(D) desc limit 10 label C 'Merchant', sum(D) 'Total Spent'")`
 
 ### Building Dashboards
 
