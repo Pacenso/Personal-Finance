@@ -78,17 +78,17 @@ Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
 Table 3 - Top 10 Merchants
 * Used a formula for this because sorting the pivot table did not work the way I needed
   * Formula: `=QUERY(raw_data!B:E, "select C, sum(D) where C is not null group by C order by sum(D) desc limit 10 label C 'Merchant', sum(D) 'Total Spent'")`
-Top 10 Merchants:
-   1. Madison Gas & Electric
-   2. Huntington Bank
-   3. Kwik Trip
-   4. Grahams Auto
-   5. Woodmans Grocery
-   6. Gamers Library
-   7. ALdi
-   8. Jiffy Lube
-   9. Johnny Delmonico's
-   10. Walmart
+* Top 10 Merchants:
+  1. Madison Gas & Electric
+  2. Huntington Bank
+  3. Kwik Trip
+  4. Grahams Auto
+  5. Woodmans Grocery
+  6. Gamers Library
+  7. ALdi
+  8. Jiffy Lube
+  9. Johnny Delmonico's
+  10. Walmart
 
 ### Building Dashboards
 
