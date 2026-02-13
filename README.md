@@ -13,9 +13,10 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
 * Convert .CSV files into separate Google Sheets
 * Create a Master Google Sheet document with 4 internal sheets
    * raw_data - Raw data from all sources to be processed
-   * categories - Mapping of my categories
    * dashboard - Contains dashboards to visually analyze data and findings
    * monthly_summary - Monthly analysis of findings
+   * categories - Mapping of my categories
+   * lookup_table - Contains the lookup table for custom categorization
 * Copy specific fields from each sheet into the raw_data sheet
   * Fields:
     * date - Date of transaction
@@ -42,8 +43,7 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
   * Remove credit card payments
 
 ### Categorizing Transactions
-* Use a [custom function](https://docs.google.com/document/d/1AEpXUVcENehsunWQjAvowS24IQx22PHxnRGpS8qHqQo/edit?usp=drive_link) that is placed in each cell of my_category
-  * This function categorizes each merchant based on input from the creator
+* Use a custom function that utilizes a lookup table for ease of use and scaling
   * Categories:
     * Groceries
     * Dining Out
@@ -58,6 +58,13 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
 * Once most items have been categorized, set a filter on my_category to find all FALSE values to determine which merchants still need to be categorized
 
 ### Creating Pivot Tables
+* Modify dates of transactions to make them compatible with a pivot table
+  * Insert a new row B and use the formula `=TEXT(A2,"yyyy-mm")` to change the format into text with the structure of yyyy-mm
+* In monthly_summary, create a pivot table data range `raw_data!B1:H586`
+  * Rows = my_category
+  * Columns = date
+  * Values = amount
+* Format all money values as currency
 
 ### Building Dashboards
 
