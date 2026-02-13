@@ -4,7 +4,6 @@ A project to showcase data analysis skills, analyzing my spending across multipl
 ## Scope
 Utilize Google Sheets to analyze personal spending habits to discover actionable insights and facilitate change
 
-
 ## Phase 1 - Google Sheets Analysis
 
 ### Obtaining Data
@@ -66,6 +65,9 @@ Table 1 - Monthly Spending by Category
   * Columns = date
   * Values = amount
 * Format all money values as currency
+
+<img width="1526" height="281" alt="image" src="https://github.com/user-attachments/assets/996229ed-61c0-454f-84ec-d3a3ede46070" />
+
 
 Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
 * In monthly_summary, create a second pivot table with range `raw_data!B1:H586`
