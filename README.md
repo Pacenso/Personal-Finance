@@ -87,8 +87,8 @@ Table 3 - Top 10 Merchants
   6. Gamers Library
   7. Aldi
   8. Jiffy Lube
-  9. Johnny Delmonico's
-  10. Walmart
+  9.  Johnny Delmonico's
+  10.  Walmart
 
 ### Building Dashboards
 
