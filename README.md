@@ -68,7 +68,6 @@ Table 1 - Monthly Spending by Category
 
 <img width="1526" height="281" alt="image" src="https://github.com/user-attachments/assets/996229ed-61c0-454f-84ec-d3a3ede46070" />
 
-
 Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
 * In monthly_summary, create a second pivot table with range `raw_data!B1:H586`
   * Rows = source
@@ -77,20 +76,14 @@ Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
     * Considered amount of transactions
 * Format sum of amount as currency
 
+<img width="344" height="107" alt="image" src="https://github.com/user-attachments/assets/8cf1096d-5392-4315-82b3-0ab24afbe126" />
+
 Table 3 - Top 10 Merchants
 * Used a formula for this because sorting the pivot table did not work the way I needed
   * Formula: `=QUERY(raw_data!B:E, "select C, sum(D) where C is not null group by C order by sum(D) desc limit 10 label C 'Merchant', sum(D) 'Total Spent'")`
-* Top 10 Merchants:
-  1. Madison Gas & Electric
-  2. Huntington Bank
-  3. Kwik Trip
-  4. Grahams Auto
-  5. Woodmans Grocery
-  6. Gamers Library
-  7. ALdi
-  8. Jiffy Lube
-  9. Johnny Delmonico's
-  10. Walmart
+
+<img width="315" height="258" alt="image" src="https://github.com/user-attachments/assets/45fae10b-f112-43d3-af31-ab6448b7c4d9" />
+
 
 ### Building Dashboards
 
