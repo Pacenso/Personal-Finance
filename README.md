@@ -60,7 +60,7 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
 Table 1 - Monthly Spending by Category
 * Modify dates of transactions to make them compatible with a pivot table
   * Insert a new row B and use the formula `=TEXT(A2,"yyyy-mm")` to change the format into text with the structure of yyyy-mm
-* In monthly_summary, create a pivot table with range `raw_data!B1:H586`
+* In monthly_summary, create a pivot table with range `raw_data!B1:H756`
   * Rows = my_category
   * Columns = date
   * Values = amount
@@ -68,8 +68,10 @@ Table 1 - Monthly Spending by Category
 
 <img width="2556" height="445" alt="image" src="https://github.com/user-attachments/assets/87b5eb57-d2a6-410a-bb4f-5674f3fa75c3" />
 
-Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
-* In monthly_summary, create a second pivot table with range `raw_data!B1:H586`
+Table 2 - Spending by Source 
+* Sources: Bank 1, Bank 2, Card 1, Card 2
+  * Represent real bank or card accounts
+* In monthly_summary, create a second pivot table with range `raw_data!B1:H756`
   * Rows = source
   * Values = sum of amount
   * Values = count of amount
@@ -90,19 +92,12 @@ Table 3 - Top 10 Merchants
 1. What is the highest spending category?
  * Bills
 
-3. Is my spending trending up or down?
+2. Is my spending trending up or down?
  * Trending downward overall
 
-5. Which months were most expensive and why?
- * March is the most expensive, followed by February. January data appears to be missing 
-
-7. Where am I over budget?
- * 
-
-9. What is one specific action I could take to save money?
- * 
-
-
+3. Which months were most expensive and why?
+ * March is the most expensive, followed by February. January data appears to be missing which could skew findings.
+ * March is the most expensive from taking a road trip
 
 ## Phase 2 - Python Automation and Forcasting
 
