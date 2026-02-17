@@ -3,7 +3,7 @@ A project to showcase data analysis skills, analyzing my spending across multipl
 Data files are not included in this repository to protect personal information.
 
 ## Scope
-Utilize Google Sheets to analyze personal spending habits to discover actionable insights and facilitate change
+Analyze 12 months of personal spending data (700+ transactions) across multiple accounts to identify spending patterns, track budget adherence, and surface actionable savings opportunities
 
 ## Phase 1 - Google Sheets Analysis
 
@@ -89,15 +89,21 @@ Table 3 - Top 10 Merchants
 <img width="494" height="402" alt="image" src="https://github.com/user-attachments/assets/0d2ebef1-f1a6-41a5-8997-d1b188087023" />
 
 ### Insights
-1. What is the highest spending category?
-   * Bills
+1. **Highest Spending Category: Bills**
+   * Bills represent 33.2% of total spending, driven primarily by 
+   rent (Steve Brown Apartments) and loan payments (Huntington Bank)
 
-2. Is my spending trending up or down?
-   * Trending downward overall
+2. **Overall Spending Trend: Downward**
+   * Monthly spending peaked in February at $3,842.51 (eating out)
+   * Average monthly spending excluding eating out: $1,869.36
 
-3. Which months were most expensive and why?
-   * March is the most expensive, followed by February. January data appears to be missing which could skew findings.
-   * March is the most expensive from taking a road trip
+3. **Most Expensive Months: March > February**
+   * February spike was driven by eating out more often or larger checks
+   * February elevated due to Valentine's Day dinner
+   * Note: January data incomplete, may affect trend analysis
+
+4. **Top Spending Merchant: Steve Brown Apartments ($5,235.00 total)**
+   * This was rent for an apartment
 
 
 
