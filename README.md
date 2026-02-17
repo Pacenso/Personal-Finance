@@ -90,14 +90,14 @@ Table 3 - Top 10 Merchants
 
 ### Insights
 1. What is the highest spending category?
- * Bills
+   * Bills
 
 2. Is my spending trending up or down?
- * Trending downward overall
+   * Trending downward overall
 
 3. Which months were most expensive and why?
- * March is the most expensive, followed by February. January data appears to be missing which could skew findings.
- * March is the most expensive from taking a road trip
+   * March is the most expensive, followed by February. January data appears to be missing which could skew findings.
+   * March is the most expensive from taking a road trip
 
 ## Phase 2 - Python Automation and Forcasting
 
