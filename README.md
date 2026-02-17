@@ -90,14 +90,19 @@ Table 3 - Top 10 Merchants
 
 ### Insights
 1. What is the highest spending category?
+ * Bills
 
-2. Is my spending trending up or down?
+3. Is my spending trending up or down?
+ * Trending downward overall
 
-3. Which months were most expensive and why?
+5. Which months were most expensive and why?
+ * March is the most expensive, followed by February. January data appears to be missing 
 
-4. Where am I over budget?
+7. Where am I over budget?
+ * 
 
-5. What is one specific action I could take to save money?
+9. What is one specific action I could take to save money?
+ * 
 
 
 
