@@ -66,7 +66,8 @@ Table 1 - Monthly Spending by Category
   * Values = amount
 * Format all money values as currency
 
-<img width="1526" height="281" alt="image" src="https://github.com/user-attachments/assets/996229ed-61c0-454f-84ec-d3a3ede46070" />
+<img width="2559" height="375" alt="image" src="https://github.com/user-attachments/assets/7ac30769-3ebc-448d-baae-e59bbf38c666" />
+
 
 Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
 * In monthly_summary, create a second pivot table with range `raw_data!B1:H586`
@@ -76,13 +77,13 @@ Table 2 - Spending by Source (Apple Card, Discover Card, Bank Account)
     * Considered amount of transactions
 * Format sum of amount as currency
 
-<img width="344" height="107" alt="image" src="https://github.com/user-attachments/assets/8cf1096d-5392-4315-82b3-0ab24afbe126" />
+<img width="536" height="202" alt="image" src="https://github.com/user-attachments/assets/aa929d81-b141-45f2-8c35-f47fdcb1f6fc" />
 
 Table 3 - Top 10 Merchants
 * Used a formula for this because sorting the pivot table did not work the way I needed
   * Formula: `=QUERY(raw_data!B:E, "select C, sum(D) where C is not null group by C order by sum(D) desc limit 10 label C 'Merchant', sum(D) 'Total Spent'")`
 
-<img width="315" height="258" alt="image" src="https://github.com/user-attachments/assets/45fae10b-f112-43d3-af31-ab6448b7c4d9" />
+<img width="498" height="407" alt="image" src="https://github.com/user-attachments/assets/1f51731a-dedf-4c8b-859a-c9d2e4f73cce" />
 
 
 ### Building Dashboards
