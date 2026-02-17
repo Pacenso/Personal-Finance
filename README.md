@@ -53,6 +53,7 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
     * Bills
     * Entertainment
     * Shopping
+    * Withdrawal
     * Other
 * Utilize filtering of original_category, sorting merchant from A-Z to categorize one category at a time
 * Once most items have been categorized, set a filter on my_category to find all FALSE values to determine which merchants still need to be categorized
