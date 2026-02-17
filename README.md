@@ -86,8 +86,6 @@ Table 3 - Top 10 Merchants
 
 <img width="494" height="402" alt="image" src="https://github.com/user-attachments/assets/0d2ebef1-f1a6-41a5-8997-d1b188087023" />
 
-### Building Dashboards
-
 ### Insights
 1. What is the highest spending category?
    * Bills
@@ -98,9 +96,6 @@ Table 3 - Top 10 Merchants
 3. Which months were most expensive and why?
    * March is the most expensive, followed by February. January data appears to be missing which could skew findings.
    * March is the most expensive from taking a road trip
-
-## Phase 2 - Python Automation and Forcasting
-
 
 
 
