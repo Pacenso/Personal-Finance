@@ -10,7 +10,7 @@ Utilize Google Sheets to analyze personal spending habits to discover actionable
 * Download statements from credit lenders and bank accounts as .CSV files
   * Set date range for 02-2025 to 02-2026
 * Convert .CSV files into separate Google Sheets
-* Create a Master Google Sheet document with 4 internal sheets
+* Create a Master Google Sheet document with 5 internal sheets
    * raw_data - Raw data from all sources to be processed
    * dashboard - Contains dashboards to visually analyze data and findings
    * monthly_summary - Monthly analysis of findings
