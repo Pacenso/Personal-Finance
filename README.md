@@ -1,5 +1,6 @@
 # Personal-Finance
 A project to showcase data analysis skills, analyzing my spending across multiple accounts from 02-2025 to 02-2026
+Data files are not included in this repository to protect personal information.
 
 ## Scope
 Utilize Google Sheets to analyze personal spending habits to discover actionable insights and facilitate change
