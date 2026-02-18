@@ -8,7 +8,7 @@ Analyze 12 months of personal spending data (700+ transactions) across multiple 
 ## Phase 1 - Google Sheets Analysis
 
 ### Obtaining Data
-* Download statements from credit lenders and bank accounts as .CSV files
+* Download statements from credit cards and bank accounts as .CSV files
   * Set date range for 02-2025 to 02-2026
 * Convert .CSV files into separate Google Sheets
 * Create a Master Google Sheet document with 5 internal sheets
@@ -22,9 +22,9 @@ Analyze 12 months of personal spending data (700+ transactions) across multiple 
     * date - Date of transaction
     * merchant - Name of merchant who received payment
     * amount - Total amount of the transaction
-    * original_category - What credit lender/bank labeled the transaction as
+    * original_category - What credit cards/bank labeled the transaction as
     * my_category - What I consider the transaction to be
-    * source - Which credit lender or bank account
+    * source - Which credit card or bank account
     * notes - Anything extra
    
 ### Category System
@@ -44,7 +44,7 @@ Analyze 12 months of personal spending data (700+ transactions) across multiple 
 
 ### Categorizing Transactions
 * Use a custom function that utilizes a lookup table for ease of use and scaling
-  * Categories:
+  * 10 Categories:
     * Groceries
     * Dining Out
     * Transportation
@@ -61,8 +61,8 @@ Analyze 12 months of personal spending data (700+ transactions) across multiple 
 ### Creating Pivot Tables
 Table 1 - Monthly Spending by Category
 * Modify dates of transactions to make them compatible with a pivot table
-  * Insert a new row B and use the formula `=TEXT(A2,"yyyy-mm")` to change the format into text with the structure of yyyy-mm
-* In monthly_summary, create a pivot table with range `raw_data!B1:H756`
+  * Insert a new row B and use the formula `=TEXT(A2,"yyyy-mm")`
+* In monthly_summary, create a pivot table with raw_data
   * Rows = my_category
   * Columns = date
   * Values = amount
@@ -73,7 +73,7 @@ Table 1 - Monthly Spending by Category
 Table 2 - Spending by Source 
 * Sources: Bank 1, Bank 2, Card 1, Card 2
   * Represent real bank or card accounts
-* In monthly_summary, create a second pivot table with range `raw_data!B1:H756`
+* In monthly_summary, create a second pivot table with range raw_data
   * Rows = source
   * Values = sum of amount
   * Values = count of amount
@@ -83,8 +83,7 @@ Table 2 - Spending by Source
 <img width="538" height="206" alt="image" src="https://github.com/user-attachments/assets/fabc1f03-10d4-4797-b65a-a02480e3dcdb" />
 
 Table 3 - Top 10 Merchants
-* Used a formula for this because sorting the pivot table did not work the way I needed
-  * Formula: `=QUERY(raw_data!B:E, "select C, sum(D) where C is not null group by C order by sum(D) desc limit 10 label C 'Merchant', sum(D) 'Total Spent'")`
+ * Formula: `=QUERY(raw_data!B:E, "select C, sum(D) where C is not null group by C order by sum(D) desc limit 10 label C 'Merchant', sum(D) 'Total Spent'")`
 
 <img width="494" height="402" alt="image" src="https://github.com/user-attachments/assets/0d2ebef1-f1a6-41a5-8997-d1b188087023" />
 
